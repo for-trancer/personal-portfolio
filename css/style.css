@@ -1,0 +1,188 @@
+/* Font Style */
+ @import url('https://fonts.googleapis.com/css2?family=Abel:wght@100;400&display=swap');
+
+
+body{
+    background-color:#111111;
+    font-family:"Abel",sans-serif;
+    font-weight: 100;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#head-section{
+    height:100vh;
+}
+
+.header{
+    background-color:#161616;
+    width:100%;
+    height:80px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:0px 0px 30px rgba(0,0,0,0.5)
+}
+
+.header-content{
+    color:white;
+    font-size: 12px;
+    font-weight: 100;
+    height:25px;
+    width:40%;
+    margin-right:10%;
+}
+
+.header-content td{
+    width:20%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header-content td:hover{
+    background-color:#FDA90C;
+}
+
+.header img{
+    top:10px;
+    margin-left:20px;
+}
+
+.hero-left{
+    width:14%;
+    margin-left:10%;
+    margin-top:20vh;
+}
+
+.hero-left .intro-text{
+    font-size:24px;
+    font-weight: 100;
+    color:white;
+    background-color:rgba(255,255,255,0.1);
+    display: inline-block;
+    padding:10px;
+    border-radius:10px;
+}
+
+.hero-left .name{
+    font-size:118px;
+    font-weight: 100;
+    color:white;
+    text-shadow: 0px 0px 60px rgba(249, 166, 13, 0.9);
+    display: inline-block;
+    margin-top: -20px;
+}
+
+.hero-left .surname::before{
+    content:'';
+    display:inline-block;
+    width:100px;
+    height:4px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background-color: #FDA90C;
+    order:-1;
+}
+
+.hero-left .surname{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:40px;
+    font-weight: 100;
+    margin-top:-10px;
+}
+
+.hero-left .contact-button{
+    width:100%;
+    height:50px;
+    background: transparent;
+    color: white;
+    font-family: "Abel",sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    border: solid 2px white;
+    opacity: 0.8;
+    margin-top: 20px;
+    border-radius: 0px 0px 10px 0px;
+    cursor: pointer;
+}
+
+.hero-left .contact-button:hover{
+    background-color:rgba(255,255,255,0.1);
+}
+
+.hero-left .social-text{
+    font-size:15px;
+    font-weight: 100;
+    color: white;
+    background-color:rgba(255,255,255,0.1);
+    display: inline-block;
+    border-radius: 10px;
+    padding:10px;
+    margin-top: 30px;
+}
+
+.socials {
+    width: 100%;
+    margin-top:30px;
+}
+
+.socials td {
+    padding: 0px;
+    border-radius: 5px;
+}
+
+.socials td:hover{
+    background-color:rgba(255,255,255,0.1);
+    text-align: center !important;
+    padding:10px !important;
+    cursor: pointer;
+}
+
+.socials td:hover img{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.socials img {
+    object-fit: contain;
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin: 0 auto 10px auto; 
+}
+
+.social-name {
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.socials td:first-child {
+    text-align: left;
+}
+
+.socials td:first-child img {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+
+.socials td:nth-child(2) {
+    text-align: center;
+}
+
+.socials td:last-child {
+    text-align: right;
+}
+
+.socials td:last-child img { 
+    margin-right: 0;
+    margin-left: auto;
+}
