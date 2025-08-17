@@ -301,6 +301,7 @@ body{
 
 #about-section{
     height:100vh;
+    position: relative;
 }
 
 .about-header{
@@ -309,12 +310,14 @@ body{
     overflow:hidden;
 }
 
-.about-header .heading-text{
+.heading-text{
     font-size:60px;
     color:white;
     font-weight:100;
-    margin-top:10vh;
     display: inline-block;
+}
+.about-header .heading-text{
+    margin-top:10vh;
 }
 
 .title-line{
@@ -431,12 +434,14 @@ body{
 }
 
 .about-container::after{
-    content:"";
+        content:"";
     height:60vh;
     width:60vh;
-    right:-20vh;
+    top:-10vh;
+    right:0;                         
+    transform: translateX(30%);      
     margin-top:20vh;
-    background: rgba(255, 190, 70, .5);
+    background: rgba(255, 190, 70, .3);
     position: absolute;
     border-radius: 50%;
     filter: blur(300px);
@@ -455,4 +460,92 @@ body{
 .basic-card:hover{
     transform: scale(1.05);
 }
+
+.skill-header .heading-text{
+    margin-top:10vh;
+}
+
+#skill-section{
+    height:100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-header{
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.skill-body{
+    width:80%;
+    margin:40px auto 0 auto;
+}
+
+.skill{
+    width:100%;
+    margin-top:20px;
+}
+
+.skill-name{
+    font-size:16px;
+    color:white;
+    font-weight: 100;
+    margin-bottom:10px;
+}
+
+.skill-bar{
+    height:16px;
+    background:#313030;
+    border-radius: 5px;
+}
+
+.skill-per{
+    height:18px;
+    background: #FDA90C;
+    border-radius: 5px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+
+.skill-per::before{
+    content:attr(per);
+    position: absolute;
+    color:white;
+    background: #313030;
+    font-size:12px;
+    font-weight:100;
+    padding:6px;
+    border-radius: 0px 10px 0px 10px;
+    right:0;
+    top:-35px;
+}
+
+
+.skill:hover .skill-per{
+    transform:scale(1.05);
+}
+
+.skill:hover .skill-name{
+    filter:brightness(0.5);
+}
+
+#skill-section::before{
+    content:"";
+    height:60vh;
+    width:60vh;
+    left:-40vh;
+    top:50vh;
+    margin-top:20vh;
+    background: rgba(255, 190, 70, .5);
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(300px);
+    z-index: -1;
+    pointer-events: none;
+    display: block;
+}
+
+
+
 
