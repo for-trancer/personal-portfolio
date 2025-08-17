@@ -6,12 +6,3 @@
         width:100%;
     }
 }
-
-@keyframes fillBarsHover{
-    from{
-        width:0%;
-    }
-    to{
-        width:100%;
-    }
-}
