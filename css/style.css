@@ -16,7 +16,7 @@ a{
 }
 
 html{
-    scroll-snap-type: y mandatory;
+   scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     scroll-timeline-axis: block;
 }
@@ -24,6 +24,7 @@ html{
 section{
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    scroll-behavior: smooth;
 }
 
 *{
@@ -44,7 +45,8 @@ section{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow:0px 0px 30px rgba(0,0,0,0.5)
+    box-shadow:0px 0px 30px rgba(0,0,0,0.5);
+    animation:slideDown 1s forwards;
 }
 
 .header-content{
@@ -90,6 +92,7 @@ section{
     width:14%;
     margin-left:10%;
     margin-top:20vh;
+    animation:slideRight 1.8s forwards;
 }
 
 .hero-left .intro-text{
@@ -254,6 +257,7 @@ section{
     margin-top: 0; 
     margin-bottom: 0; 
     filter: drop-shadow(0px 30px 30px rgba(0, 0, 0, 0.5));
+    animation: slideUp 2.5s forwards;
 }
 
 .hero-center img:hover{
@@ -268,6 +272,7 @@ section{
     border-radius: 50%;
     box-shadow:2px 5px 18px rgba(0,0,0,0.25);
     z-index: 2;
+    animation:zoomIn 2s forwards;
 }
 
 .eclipse-glow{
@@ -287,6 +292,7 @@ section{
     margin-top: 30vh;
     z-index:4;
     border-radius: 10px;
+    animation:slideLeft 2.2s forwards;
 }
 
 .hero-right .title-text{
@@ -345,12 +351,7 @@ section{
     transform: scale(1.1);
 }
 
-.seperator{
-    width:100%;
-    height:1px;
-    position:absolute;
-    background: white;
-}
+
 
 #about-section{
     height:100vh;
@@ -368,6 +369,7 @@ section{
     color:white;
     font-weight:100;
     display: inline-block;
+    animation: slideDown .7s forwards;
 }
 .about-header .heading-text{
     margin-top:10vh;
@@ -377,6 +379,7 @@ section{
     width:20%;
     height:3px;
     background: #FDA90C;
+    animation: titleLineIn .9s forwards;
 }
 
 .about-header .about-description{
@@ -384,6 +387,7 @@ section{
     font-size:16px;
     font-weight: 100;
     margin-top:30px;
+    animation: slideUp 1.3s forwards;
 }
 
 .about-header:hover .title-line{
@@ -406,12 +410,13 @@ section{
     align-items: center;
     margin:0;
     padding:0;
+    animation: zoomIn 1.5s forwards;
 }
 
 .about-left img{
     max-width: 100%;
     max-height:60vh;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
     display: block;
 }
 
@@ -434,6 +439,7 @@ section{
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
     border-radius:0px 10px 0px 0px;
     padding:20px;
+    animation:slideLeft 2.3s forwards;
 }
 
 .icon-text{
@@ -472,14 +478,16 @@ section{
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
     border-radius:0px 0px 0px 0px;
     padding:20px;
+    animation:slideLeft 2.6s forwards;
 }
 
 .basic-card{
     width:100%;
     background: rgba(49, 48, 48, 0.6);
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
-    border-radius:0px 0px 0px 10px;
+    border-radius:0px 0px 10px 0px;
     padding:20px;
+    animation:slideLeft 3s forwards;
 }
 
 .basic-card-text{
@@ -516,6 +524,7 @@ section{
 
 .skill-header .heading-text{
     margin-top:10vh;
+    animation: slideUp .8s forwards;
 }
 
 #skill-section{
@@ -557,7 +566,7 @@ section{
     background: #FDA90C;
     border-radius: 5px;
     position: relative;
-    animation: fillBars 2.5s 1;
+    animation: fillBars 4s 1;
 }
 
 .skill-per::before{
@@ -580,6 +589,7 @@ section{
 
 .skill:hover .skill-name{
     filter:brightness(0.5);
+    animation: slideRight 1s forwards;
 }
 
 #skill-section::before{
@@ -616,6 +626,7 @@ section{
 
 .projects-header .heading-text{
     margin-top: 5vh;
+    animation: slideRight .8s forwards;
 }
 
 .project-area{
@@ -650,6 +661,7 @@ section{
     font-weight: 200;
     margin-bottom: 15px;
     display:inline-block;
+    animation: slideRight 1.2s forwards;
 }
 
 
@@ -678,6 +690,7 @@ section{
     display: flex;
    justify-content: center;
     flex-direction: column;
+    animation: slideRight 2s forwards;
 }
 
 .project-right{
@@ -691,6 +704,7 @@ section{
     border-radius:5px;
     margin-left: -5%;
     z-index: -1;
+    animation: slideLeft 3s forwards;
 }
 
 .project-quote{
@@ -698,6 +712,7 @@ section{
     font-size:12px;
     font-weight: 100;
     opacity: 0.75;
+    animation: slideUp 1.3s forwards;
 }
 
 .project-subtitle{
@@ -705,12 +720,14 @@ section{
     font-size:34px;
     font-weight:200;
     margin-top: -10px;
+    animation: slideUp 1.5s forwards;
 }
 
 .project-right img{
     max-height:80%;
     min-height:auto;
     object-fit: cover;
+    animation:zoomIn 3s forwards;
 }
 
 #projects-section::after{
@@ -739,6 +756,7 @@ section{
     font-size:16px;
     cursor: pointer;
     border-radius: 5px;
+    animation: slideLeft 1s forwards;
 }
 
 .see-more-text:hover{
