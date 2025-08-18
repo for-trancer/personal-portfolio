@@ -14,11 +14,11 @@
             <img src="logos/logo.png" height="60px" width="60px">
             <table class="header-content">
                 <tr>
-                    <td>ABOUT</td>
-                    <td>SKILLS</td>
-                    <td>PROJECTS</td>
-                    <td>PORTFOLIO</td>
-                    <td>CONTACT</td>
+                    <td><a href="#about-section">ABOUT</a></td>
+                    <td><a href="#skill-section">SKILLS</a></td>
+                    <td><a href="#projects-section">PROJECTS</a></td>
+                    <td><a href="#portfolio-section">PORTFOLIO</a></td>
+                    <td><a href="#contact-section">CONTACT</a></td>
                 </tr>
             </table>
         </div>
@@ -27,21 +27,27 @@
                 <p class="intro-text">Hey, i am</p>
                 <h1 class="name">Arjun</h1>
                 <h2 class="surname">Ashok</h2>
-                <button class="contact-button">CONTACT ME</button>
+                <button class="contact-button"  onclick="document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'});">CONTACT ME</button>
                 <p class="social-text">my socials</p>
                 <table class="socials">
                     <tr>
                         <td>
+                            <a href="https://www.linkedin.com/in/arjunashok1">
                             <img src="icons/linkedin-circled.png" class="socials-img">
                             <p class="social-name">linkedin</p>
+                            </a>
                         </td>
                         <td>
+                            <a href="https://www.instagram.com/for.trancer">
                             <img src="icons/instagram-new.png" class="socials-img">
                             <p class="social-name">instagram</p>
+                            </a>
                         </td>
                         <td>
+                            <a href="https://github.com/for-trancer">
                             <img src="icons/github.png" class="socials-img">
                             <p class="social-name">github</p>
+                            </a>
                         </td>
                     </tr>
                 </table>
@@ -58,15 +64,14 @@
                 <p class="title-description">I design and develop with a steady hand, shaping ideas into clear and useful creations. My work brings together thoughtful code and considered visuals, building tools that are both practical and inviting. Each project is a quiet conversation between function and form—crafted to be understood, remembered, and used</p>
                 <table class="title-menu">
                     <tr>
-                        <td>about me</td>
-                        <td>my skills</td>
-                        <td>my projects</td>
+                        <td><a href="#about-section">about me</a></td>
+                        <td><a href="#skill-section">my skills</a></td>
+                        <td><a href="#projects-section">my projects</a></td>
                     </tr>
                 </table>
             </div>
         </div>
     </section>
-    <div class="seperator"></div>
     <section id="about-section">
         <div class="about-header">
             <p class="heading-text">About Me</p>
@@ -105,7 +110,6 @@
             </div>
         </div>
     </section>
-    <div class="seperator"></div>
     <section id="skill-section">
         <div class="skill-header">
             <p class="heading-text">My Skills</p>
@@ -156,15 +160,17 @@
             </div>
         </div>
     </section>
-    <div class="seperator"></div>
     <section id="projects-section">
         <div class="projects-header">
             <p class="heading-text">Things I’ve Worked on, Some of Them</p>
             <div class="title-line"></div>
+            <a href="https://github.com/for-trancer?tab=repositories">
             <p class="see-more-text">SEE MORE</p>
+            </a>
         </div>
         <p class="featured-text">Featured Project</p>
         <div class="project-area">
+            <a href="https://github.com/for-trancer/luna">
             <p class="project-title">LUNA</p>
             <div class="project-card">
                 <div class="project-left">
@@ -179,11 +185,13 @@
                     <img src="/mockups/luna-mockup.png">
                 </div>
             </div>
+            </a>
+            <a href="https://github.com/for-trancer/NEXUS">
             <p class="project-title">NEXUS</p>
             <div class="project-card">
                 <div class="project-left">
                     <p class="project-description">Nexus is a modern online chatting platform developed using PHP, MySQL, and Python for secure face authentication. It enables users to engage in real-time private messaging, ensuring seamless communication across the platform. With Python-based face recognition, Nexus provides an additional layer of security for user accounts. The platform also offers customizable themes for a personalized chat experience and message translation using Google Translate, allowing effortless communication across different languages. Designed for convenience, security, and versatility, Nexus delivers a smooth and engaging chatting experience</p>
-                    <p class="project-technology">PHP Python MySQL HTML CSS JAVA Script AJAX</p>
+                    <p class="project-technology">PHP Python MySQL HTML CSS JavaScript AJAX</p>
                 </div>
                 <div class="project-right">
                     <div class="project-right-holder">
@@ -193,17 +201,18 @@
                     <img src="/mockups/nexus-mockup.png">
                 </div>
             </div>
+            </a>
         </div>
     </section>
-    <div class="seperator"></div>
     <section id="portfolio-section">
         <div class="portfolio-header">
             <p class="heading-text">Design Portfolio</p>
             <div class="title-line"></div>
             <p class="portfolio-text">I’m passionate about visual storytelling. I create posters, logos, and graphics that are both visually striking and functional, helping projects and events stand out.</p>
-            <p class="see-more-text">SEE MORE</p>
+            <a href="https://drive.google.com/drive/folders/1MkX5q7RnxW4DRvFqmpoSOmOpMIo2GTxQ?usp=sharing"><p class="see-more-text">SEE MORE</p></a>
         </div>
         <div class="portfolio-area">
+            <a href="https://drive.google.com/drive/folders/14HF2TB5SWObES-fvATxz4k0OMK1VQG7v?usp=sharing">
             <div class="portfolio-card" title="POSTERS">
                 <img src="posters/poster-1.jpg">
                 <img src="posters/poster-2.jpg">
@@ -211,6 +220,8 @@
                 <img src="posters/poster-4.jpg">
                 <img src="posters/poster-5.jpg">
             </div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/11r-Rk4OXgDpyEwp5RtxTbjC5ShymkmhD?usp=sharing">
             <div class="portfolio-card" title="LOGOS">
                 <img src="logos/logo-1.png">
                 <img src="logos/logo-2.png">
@@ -218,20 +229,20 @@
                 <img src="logos/logo-4.png">
                 <img src="logos/logo-5.png">
             </div>
+            </a>
         </div>
     </section>
-    <div class="seperator"></div>
     <section id="contact-section">
         <div class="contact-header">
             <p class="heading-text">GET IN TOUCH</p>
             <div class="title-line"></div>
         </div>
         <div class="contact-card">
-            <img src="icons/new-post.png">
-            <img src="icons/instagram-new.png">
-            <img src="icons/linkedin-circled.png">
-            <img src="icons/github.png">
-            <img src="icons/whatsapp.png">
+            <a href="mailto:mrfortrancer@gmail.com"><img src="icons/new-post.png"></a>
+            <a href="https://www.instagram.com/for.trancer"><img src="icons/instagram-new.png"></a>
+            <a href="https://www.linkedin.com/in/arjunashok1"><img src="icons/linkedin-circled.png"></a>
+            <a href="https://github.com/for-trancer"><img src="icons/github.png"></a>
+            <a href="https://wa.me/919778063324"><img src="icons/whatsapp.png"></a>
         </div>
     </section>
 </body>
