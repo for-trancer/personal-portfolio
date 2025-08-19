@@ -46,7 +46,6 @@ section{
     align-items: center;
     justify-content: space-between;
     box-shadow:0px 0px 30px rgba(0,0,0,0.5);
-    animation:slideDown 1s ease;
 }
 
 .header-content{
@@ -94,7 +93,6 @@ section{
     width:14%;
     margin-left:10%;
     margin-top:20vh;
-    animation:slideRight 1.8s ease;
 }
 
 .hero-left .intro-text{
@@ -259,7 +257,6 @@ section{
     margin-top: 0; 
     margin-bottom: 0; 
     filter: drop-shadow(0px 30px 30px rgba(0, 0, 0, 0.5));
-    animation: slideUp 2.5s ease;
 }
 
 .hero-center img:hover{
@@ -274,7 +271,6 @@ section{
     border-radius: 50%;
     box-shadow:2px 5px 18px rgba(0,0,0,0.25);
     z-index: 2;
-    animation:zoomIn 2s ease;
 }
 
 .eclipse-glow{
@@ -292,7 +288,6 @@ section{
     height:100%;
     margin-right: 10%;
     margin-top: 30vh;
-    animation:slideLeft 2.2s ease;
 }
 
 .hero-right{
@@ -356,8 +351,6 @@ section{
      text-shadow: 0px 0px 40px rgba(249, 166, 13, 1);
 }
 
-
-
 #about-section{
     height:100vh;
     position: relative;
@@ -374,7 +367,6 @@ section{
     color:white;
     font-weight:100;
     display: inline-block;
-    animation: slideDown .7s ease;
 }
 .about-header .heading-text{
     margin-top:10vh;
@@ -393,7 +385,6 @@ section{
     font-size:16px;
     font-weight: 100;
     margin-top:30px;
-    animation: slideUp 1.3s ease;
 }
 
 .about-header:hover .title-line{
@@ -416,7 +407,6 @@ section{
     align-items: center;
     margin:0;
     padding:0;
-    animation: zoomIn 1.5s ease;
 }
 
 .about-left img{
@@ -438,7 +428,6 @@ section{
     width:50%;
     gap:16px;
     max-height: 80%;
-    animation:slideLeft 2.3s ease;
 }
 
 .education-card{
@@ -532,7 +521,6 @@ section{
 
 .skill-header .heading-text{
     margin-top:10vh;
-    animation: slideUp .8s ease;
 }
 
 #skill-section{
@@ -561,7 +549,6 @@ section{
     color:white;
     font-weight: 100;
     margin-bottom:10px;
-    animation: slideRight 1s ease;
 }
 
 .skill-bar{
@@ -579,7 +566,6 @@ section{
 }
 
 .skill-per-wrapper{
-    animation: fillBars 2s ease;
 }
 
 .skill-per::before{
@@ -638,7 +624,6 @@ section{
 
 .projects-header .heading-text{
     margin-top: 5vh;
-    animation: slideRight .8s ease;
 }
 
 .project-area{
@@ -677,7 +662,6 @@ section{
 }
 
 .project-title-wrapper{
-    animation: slideRight 1.2s ease;
 }
 
 
@@ -708,7 +692,6 @@ section{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    animation: slideRight 2s ease;
 }
 
 .project-right{
@@ -722,8 +705,11 @@ section{
     border-radius:5px;
     margin-left: -5%;
     z-index: -1;
-    animation: slideLeft 3s ease;
     transition: width .4s ease;
+}
+
+.project-right-holder{
+    opacity:1;
 }
 
 .project-quote{
@@ -731,7 +717,6 @@ section{
     font-size:12px;
     font-weight: 100;
     opacity: 0.75;
-    animation: slideUp 1.3s ease;
 }
 
 .project-subtitle{
@@ -739,14 +724,12 @@ section{
     font-size:34px;
     font-weight:200;
     margin-top: -10px;
-    animation: slideUp 1.5s ease;
 }
 
 .project-right img{
     max-height:80%;
     min-height:auto;
     object-fit: cover;
-    animation:zoomIn 3s ease;
 }
 
 #projects-section::after{
@@ -822,7 +805,6 @@ section{
     margin-left:10%;
     margin-right:10%;
     position: relative;
-    animation:slideDown .8s ease;
 }
 
 #portfolio-section .heading-text{
@@ -853,11 +835,9 @@ section{
     background: rgb(49, 48, 48,0.8);
     margin-top:20px;
     position: relative;
-    animation: slideRight 0.8s ease;
 }
 
 .portfolio-image-wrapper{
-    animation: zoomIn 2s ease;
 }
 .portfolio-card img{
     max-width:150px;
@@ -949,7 +929,6 @@ section{
     margin-left: 10%;
     margin-right:10%;
     text-align: center;
-    animation:slideDown 1s ease;
 }
 
 .contact-header .heading-text{
@@ -967,7 +946,6 @@ section{
     height:180px;
     margin-left:20%;
     margin-right:20%;
-    animation:slideUp .8s ease;
 }
 
 .contact-card{
@@ -990,7 +968,6 @@ section{
 }
 
 .contact-img-wrapper{
-    animation:zoomIn 1.2s ease .6s;
 }
 
 .contact-header:hover .title-line{
