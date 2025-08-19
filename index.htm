@@ -59,16 +59,18 @@
                 <div class="eclipse-glow">
                 </div>
             </div>
-            <div class="hero-right">
-                <p class="title-text">Software Engineer</p>
-                <p class="title-description">I design and develop with a steady hand, shaping ideas into clear and useful creations. My work brings together thoughtful code and considered visuals, building tools that are both practical and inviting. Each project is a quiet conversation between function and form—crafted to be understood, remembered, and used</p>
-                <table class="title-menu">
-                    <tr>
-                        <td><a href="#about-section">about me</a></td>
-                        <td><a href="#skill-section">my skills</a></td>
-                        <td><a href="#projects-section">my projects</a></td>
-                    </tr>
-                </table>
+            <div class="hero-right-wrapper">
+                <div class="hero-right">
+                    <p class="title-text">Software Engineer</p>
+                    <p class="title-description">I design and develop with a steady hand, shaping ideas into clear and useful creations. My work brings together thoughtful code and considered visuals, building tools that are both practical and inviting. Each project is a quiet conversation between function and form—crafted to be understood, remembered, and used</p>
+                    <table class="title-menu">
+                        <tr>
+                            <td><a href="#about-section">about me</a></td>
+                            <td><a href="#skill-section">my skills</a></td>
+                            <td><a href="#projects-section">my projects</a></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
@@ -119,43 +121,57 @@
             <div class="skill">
             <p class="skill-name">Flutter</p>
             <div class="skill-bar">
+                <div class="skill-per-wrapper">
                 <div class="skill-per" per="80%" style="max-width:80%;animation-duration: 2.3s;animation-delay: 0.2s;"></div>
+                </div>
             </div>
             </div>
             <div class="skill">
                 <p class="skill-name">C</p>
                 <div class="skill-bar">
-                    <div class="skill-per" per="88%" style="max-width:88%;animation-duration: 2.9s;animation-delay: 0.1s;"></div>
+                    <div class="skill-per-wrapper">
+                        <div class="skill-per" per="88%" style="max-width:88%;animation-duration: 2.9s;animation-delay: 0.1s;"></div>
+                    </div>
                 </div>
             </div>
             <div class="skill">
                 <p class="skill-name">JAVA</p>
                 <div class="skill-bar">
-                    <div class="skill-per" per="72%" style="max-width:72%;animation-duration: 2.5s;animation-delay: 0.5s;"></div>
+                    <div class="skill-per-wrapper">
+                        <div class="skill-per" per="72%" style="max-width:72%;animation-duration: 2.5s;animation-delay: 0.5s;"></div>
+                    </div>
                 </div>
             </div>
             <div class="skill">
                 <p class="skill-name">Python</p>
                 <div class="skill-bar">
-                    <div class="skill-per" per="78%" style="max-width:78%;animation-duration: 2.1s;animation-delay: 0.3s;"></div>
+                    <div class="skill-per-wrapper">
+                        <div class="skill-per" per="78%" style="max-width:78%;animation-duration: 2.1s;animation-delay: 0.3s;"></div>
+                    </div>
                 </div>
             </div>
             <div class="skill">
                 <p class="skill-name">PHP</p>
                 <div class="skill-bar">
-                    <div class="skill-per" per="82%" style="max-width:82%;animation-duration: 2s;animation-delay: 0.9s;"></div>
+                    <div class="skill-per-wrapper">
+                        <div class="skill-per" per="82%" style="max-width:82%;animation-duration: 2s;animation-delay: 0.9s;"></div>
+                    </div>
                 </div>
             </div>
             <div class="skill">
                 <p class="skill-name">HTML &amp; CSS</p>
                 <div class="skill-bar">
-                    <div class="skill-per" per="83%" style="max-width:83%;animation-duration: 2.7s;animation-delay: 0.1s;"></div>
+                    <div class="skill-per-wrapper">
+                        <div class="skill-per" per="83%" style="max-width:83%;animation-duration: 2.7s;animation-delay: 0.1s;"></div>
+                    </div>
                 </div>
             </div>
             <div class="skill">
                 <p class="skill-name">x86 Assembly</p>
                 <div class="skill-bar">
-                    <div class="skill-per" per="76%" style="max-width:76%;animation-duration: 2.9s;animation-delay: 0.2s;"></div>
+                    <div class="skill-per-wrapper">
+                        <div class="skill-per" per="76%" style="max-width:76%;animation-duration: 2.9s;animation-delay: 0.2s;"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -171,7 +187,9 @@
         <p class="featured-text">Featured Project</p>
         <div class="project-area">
             <a href="https://github.com/for-trancer/luna">
-            <p class="project-title">LUNA</p>
+            <div class="project-title-wrapper">
+                <p class="project-title">LUNA</p>
+            </div>
             <div class="project-card">
                 <div class="project-left">
                     <p class="project-description">Luna is an advanced Android voice assistant built with Flutter that combines online and offline capabilities for seamless daily task management. Powered by a Flask server hosting XLM-RoBERTa for intent classification and NER models for online processing, Luna also features offline functionality through MobileBERT replicas trained on the MASSIVE dataset. Users can control system settings like WiFi, Bluetooth, hotspot, mobile data, brightness, and volume, while also setting alarms, launching apps, and performing YouTube searches hands-free. The assistant includes AI-driven image generation using LCM-LoRA 1.5 and offers secure access through Firebase authentication. With its modular architecture ensuring smooth performance and easy feature expansion, Luna delivers a robust digital assistant experience that works intelligently both online and offline.</p>
@@ -187,7 +205,9 @@
             </div>
             </a>
             <a href="https://github.com/for-trancer/NEXUS">
-            <p class="project-title">NEXUS</p>
+            <div class="project-title-wrapper">
+                <p class="project-title">NEXUS</p>
+            </div>
             <div class="project-card">
                 <div class="project-left">
                     <p class="project-description">Nexus is a modern online chatting platform developed using PHP, MySQL, and Python for secure face authentication. It enables users to engage in real-time private messaging, ensuring seamless communication across the platform. With Python-based face recognition, Nexus provides an additional layer of security for user accounts. The platform also offers customizable themes for a personalized chat experience and message translation using Google Translate, allowing effortless communication across different languages. Designed for convenience, security, and versatility, Nexus delivers a smooth and engaging chatting experience</p>
@@ -214,20 +234,40 @@
         <div class="portfolio-area">
             <a href="https://drive.google.com/drive/folders/14HF2TB5SWObES-fvATxz4k0OMK1VQG7v?usp=sharing">
             <div class="portfolio-card" title="POSTERS">
-                <img src="posters/poster-1.jpg">
-                <img src="posters/poster-2.jpg">
+                <div class="portfolio-image-wrapper">
+                    <img src="posters/poster-1.jpg">
+                </div>
+                <div class="portfolio-image-wrapper">
+                    <img src="posters/poster-2.jpg">
+                </div>
+                <div class="portfolio-image-wrapper">
                 <img src="posters/poster-3.jpg">
-                <img src="posters/poster-4.jpg">
-                <img src="posters/poster-5.jpg">
+                </div>
+                <div class="portfolio-image-wrapper">
+                    <img src="posters/poster-4.jpg">
+                </div>
+                <div class="portfolio-image-wrapper">
+                    <img src="posters/poster-5.jpg">
+                </div>
             </div>
             </a>
             <a href="https://drive.google.com/drive/folders/11r-Rk4OXgDpyEwp5RtxTbjC5ShymkmhD?usp=sharing">
             <div class="portfolio-card" title="LOGOS">
-                <img src="logos/logo-1.png">
-                <img src="logos/logo-2.png">
-                <img src="logos/logo-3.png">
-                <img src="logos/logo-4.png">
-                <img src="logos/logo-5.png">
+                <div class="portfolio-image-wrapper">
+                    <img src="logos/logo-1.png">
+                </div>
+                <div class="portfolio-image-wrapper">
+                    <img src="logos/logo-2.png">
+                </div>
+                <div class="portfolio-image-wrapper">
+                    <img src="logos/logo-3.png">
+                </div>
+                <div class="portfolio-image-wrapper">
+                    <img src="logos/logo-4.png">
+                </div>
+                <div class="portfolio-image-wrapper">
+                    <img src="logos/logo-5.png">
+                </div>
             </div>
             </a>
         </div>
@@ -237,12 +277,24 @@
             <p class="heading-text">GET IN TOUCH</p>
             <div class="title-line"></div>
         </div>
-        <div class="contact-card">
-            <a href="mailto:mrfortrancer@gmail.com"><img src="icons/new-post.png"></a>
-            <a href="https://www.instagram.com/for.trancer"><img src="icons/instagram-new.png"></a>
-            <a href="https://www.linkedin.com/in/arjunashok1"><img src="icons/linkedin-circled.png"></a>
-            <a href="https://github.com/for-trancer"><img src="icons/github.png"></a>
-            <a href="https://wa.me/919778063324"><img src="icons/whatsapp.png"></a>
+        <div class="contact-card-wrapper">
+            <div class="contact-card">
+                <div class="contact-img-wrapper">
+                    <a href="mailto:mrfortrancer@gmail.com"><img src="icons/new-post.png"></a>
+                </div>
+                <div class="contact-img-wrapper">
+                    <a href="https://www.instagram.com/for.trancer"><img src="icons/instagram-new.png"></a>
+                </div>
+                <div class="contact-img-wrapper">
+                    <a href="https://www.linkedin.com/in/arjunashok1"><img src="icons/linkedin-circled.png"></a>
+                </div>
+                <div class="contact-img-wrapper">
+                    <a href="https://github.com/for-trancer"><img src="icons/github.png"></a>
+                </div>
+                <div class="contact-img-wrapper">
+                    <a href="https://wa.me/919778063324"><img src="icons/whatsapp.png"></a>
+                </div>
+            </div>
         </div>
     </section>
 </body>
