@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to reset and hide all animated elements initially
     function hideAnimatedElements() {
         // Hero section elements (except header which should always show)
-        const heroElements = document.querySelectorAll('.hero-left, .hero-center img, .eclipse-stroke, .hero-right-wrapper');
+        const heroElements = document.querySelectorAll('.header,.hero-left, .hero-center img, .eclipse-stroke, .hero-right-wrapper');
         heroElements.forEach(el => {
             el.style.animation = 'none';
             el.style.opacity = '0';
@@ -79,6 +79,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to animate hero section
     function animateHeroSection() {
+        setTimeout(() => {
+            const heroLeft = document.querySelector('.header');
+            if (heroLeft) {
+                heroLeft.style.animation = 'slideDown .8s ease forwards';
+                heroLeft.style.opacity = '1';
+                heroLeft.style.transform = 'none';
+            }
+        }, 100);
         setTimeout(() => {
             const heroLeft = document.querySelector('.hero-left');
             if (heroLeft) {
